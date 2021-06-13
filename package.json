@@ -16,7 +16,8 @@
     "datocms",
     "datocms-plugin",
     "field-addon",
-    "string-field"
+    "string-field",
+    "random-id"
   ],
   "files": [
     "dist",
@@ -25,9 +26,9 @@
   "author": "Elena Pavlova <lenlho22@gmail.com>",
   "license": "ISC",
   "datoCmsPlugin": {
-    "title": "Id Generator",
+    "title": "ID Generator",
     "previewImage": "docs/preview.gif",
-    "coverImage": "docs/cover.png",
+    "coverImage": "docs/cover.jpeg",
     "entryPoint": "dist/index.html",
     "pluginType": "field_addon",
     "fieldTypes": [
