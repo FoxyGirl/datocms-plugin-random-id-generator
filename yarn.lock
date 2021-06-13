@@ -2656,7 +2656,7 @@ dateformat@^3.0.3:
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/dateformat/-/dateformat-3.0.3.tgz#a6e37499a4d9a9cf85ef5872044d62901c9889ae"
 
-datocms-client@^3.0.16:
+datocms-client@^3.0.16, datocms-client@^3.4.11:
   version "3.4.11"
   resolved "https://registry.yarnpkg.com/datocms-client/-/datocms-client-3.4.11.tgz#933763c56ea085afbb4c4d117446425f4d9fdff8"
   dependencies:

@@ -1,8 +1,8 @@
 {
-  "name": "datocms-plugin-id-generator",
-  "homepage": "https://github.com/FoxyGirl/datocms-plugin-id-generator",
+  "name": "datocms-plugin-random-id-generator",
+  "homepage": "https://github.com/FoxyGirl/datocms-plugin-random-id-generator",
   "version": "0.0.1",
-  "description": "A simple plugin to generate IDs for your documents in DatoCMS",
+  "description": "A simple plugin to generate random IDs for your documents in DatoCMS",
   "main": "index.js",
   "scripts": {
     "start": "NODE_ENV=development webpack-dev-server --port 5000",
@@ -60,19 +60,19 @@
           "hint": "The minimum length for your IDs, default is 3"
         },
         {
-          "id": "typeId",
-          "label": "Sequential ID type",
+          "id": "isUpperCase",
+          "label": "Upper case for generated ID",
           "type": "boolean",
           "required": false,
-          "hint": "Random type is setted for IDs by default",
-          "default": false
+          "hint": "Convert generated IDs to uppercase",
+          "default": true
         },
         {
           "id": "autoGeneration",
           "label": "Auto generation",
           "type": "boolean",
           "required": false,
-          "hint": "Auto generation for IDs ",
+          "hint": "Auto generation for IDs",
           "default": true
         }
       ]
@@ -112,6 +112,7 @@
   },
   "dependencies": {
     "classname": "^0.0.0",
+    "datocms-client": "^3.4.11",
     "eslint-config-react-app": "^6.0.0",
     "eslint-plugin-flowtype": "^5.7.2",
     "eslint-plugin-react-hooks": "^4.2.0",
