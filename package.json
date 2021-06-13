@@ -26,7 +26,7 @@
   "author": "Elena Pavlova <lenlho22@gmail.com>",
   "license": "ISC",
   "datoCmsPlugin": {
-    "title": "ID Generator",
+    "title": "ID generator",
     "previewImage": "docs/preview.gif",
     "coverImage": "docs/cover.jpeg",
     "entryPoint": "dist/index.html",
@@ -62,7 +62,7 @@
         },
         {
           "id": "isUpperCase",
-          "label": "Upper case for generated ID",
+          "label": "Uppercase for generated ID",
           "type": "boolean",
           "required": false,
           "hint": "Convert generated IDs to uppercase",

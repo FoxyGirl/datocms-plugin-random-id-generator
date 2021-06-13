@@ -25,11 +25,11 @@ When applying this plugin to your field you can set the following settings:
 
 ![Plugin settings fields](https://github.com/FoxyGirl/datocms-plugin-random-id-generator/raw/master/docs/03-configuration.jpg)
 
-The result of plugin working appears in the sidebar:
+The result of plugin working appears in the field:
 
 ![ID generator](https://github.com/FoxyGirl/datocms-plugin-random-id-generator/raw/master/docs/04-using.jpg)
 
-Clicking on the link "Generate ..." generates random ID according to settings.
+Click on the link "Generate ..." generates random ID according to settings.
 
 ## Development
 ____
