@@ -62,9 +62,13 @@ const Main = ({
 
   useEffect(() => {
     if (autoGeneration) {
-      checkIsFieldSetted();
+      if (plugin.itemId) {
+        checkIsFieldSetted();
+      } else {
+        setShouldAutoGenerate(true);
+      }
     }
-  }, [autoGeneration, checkIsFieldSetted]);
+  }, [autoGeneration, checkIsFieldSetted, plugin.itemId]);
 
   useEffect(() => {
     if (shouldAutoGenerate) {
