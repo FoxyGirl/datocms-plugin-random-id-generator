@@ -15,6 +15,10 @@ const getRandomKey = (length) => {
   return keyRand1;
 };
 
+const toCamel = s => s.replace(/([-_][a-z])/ig, $1 => $1.toUpperCase()
+  .replace('-', '')
+  .replace('_', ''));
+
 const Main = ({
   plugin, datoCmsApiToken, idPrefix, minLength = 3, autoGeneration, isUpperCase,
 }) => {
@@ -29,7 +33,8 @@ const Main = ({
 
     client.items.find(plugin.itemId)
       .then((currentItem) => {
-        const currentValue = currentItem[plugin.field.attributes.api_key];
+        const convertedApiKey = toCamel(plugin.field.attributes.api_key);
+        const currentValue = currentItem[convertedApiKey];
 
         if (!currentValue) {
           setShouldAutoGenerate(true);
