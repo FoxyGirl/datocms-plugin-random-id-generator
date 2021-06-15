@@ -1,7 +1,7 @@
 {
   "name": "datocms-plugin-random-id-generator",
   "homepage": "https://github.com/FoxyGirl/datocms-plugin-random-id-generator",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A simple plugin to generate random IDs for your documents in DatoCMS",
   "main": "index.js",
   "scripts": {
@@ -35,15 +35,7 @@
       "string"
     ],
     "parameters": {
-      "global": [
-        {
-          "id": "datoCmsApiToken",
-          "label": "DatoCMS API Token",
-          "type": "string",
-          "required": true,
-          "hint": "The DatoCMS API read-only token to use to query assets"
-        }
-      ],
+      "global": [],
       "instance": [
         {
           "id": "idPrefix",
